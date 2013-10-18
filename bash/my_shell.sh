@@ -6,6 +6,8 @@ export PATH=${PATH}:${JAVA_HOME}/bin:${MY_BIN_HOME}/dex2jar-0.0.9.15:${MY_BIN_HO
 export CLASSPATH=.:${JAVA_HOME}/lib:${JAVA_HOME}/jre/lib
 
 alias ack='ack-grep'
+alias cscope_build_c='find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files;
+                    cscope -q -R -b -i cscope.files'
 alias vpn='python3 ~/goagent/local/proxy.py'
 alias update_deepin='sudo apt-get update && sudo apt-get upgrade'
 
