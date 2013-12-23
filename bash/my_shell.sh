@@ -9,9 +9,11 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JAVA_HOME}/jre/lib
 alias ack='ack-grep'
 alias cscope_build_c='find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files;
                     cscope -q -R -b -i cscope.files'
-alias vpn='python3 ~/goagent/local/proxy.py'
+alias vpn='python ~/goagent/local/proxy.py'
 alias ssh_proxy='ssh -qTfnN -D 7070 hualet@vip04.gossh.net -p 443'
+alias vps_proxy='ssh -qTfnN -D 7070 hualet@192.157.206.233'
 alias update_deepin='sudo apt-get update && sudo apt-get upgrade'
+alias copy_file_content='xclip -sel clip <'
 
 alias hualet2deepin='cp ~/.emacs ~/Backup/hualet-emacs/.emacs ; cp ~/Backup/deepin-emacs/.emacs ~/.emacs'
 alias deepin2hualet='cp ~/.emacs ~/Backup/deepin-emacs/.emacs ; cp ~/Backup/hualet-emacs/.emacs ~/.emacs'
