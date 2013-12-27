@@ -3,24 +3,19 @@
 export PROJECT_HOME=~/project
 export MY_BIN_HOME=~/bin
 export JAVA_HOME=/usr/share/jdk1.7.0_40/
-export PATH=${PATH}:${JAVA_HOME}/bin:${MY_BIN_HOME}/dex2jar-0.0.9.15:${MY_BIN_HOME}/jd-gui-linux
+export PATH=/opt/Qt5.1.1/5.1.1/gcc/bin:${PATH}:${JAVA_HOME}/bin:${MY_BIN_HOME}/dex2jar-0.0.9.15:${MY_BIN_HOME}/jd-gui-linux
 export CLASSPATH=.:${JAVA_HOME}/lib:${JAVA_HOME}/jre/lib
 
 alias ack='ack-grep'
 alias cscope_build_c='find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files;
                     cscope -q -R -b -i cscope.files'
+alias ec='emacsclient'
 alias vpn='python ~/goagent/local/proxy.py'
 alias ssh_proxy='ssh -qTfnN -D 7070 hualet@vip04.gossh.net -p 443'
 alias vps_proxy='ssh -qTfnN -D 7070 hualet@192.157.206.233'
 alias update_deepin='sudo apt-get update && sudo apt-get upgrade'
 alias copy_file_content='xclip -sel clip <'
+alias dss2014='~/project/dss/frame/main.py'
 
 alias hualet2deepin='cp ~/.emacs ~/Backup/hualet-emacs/.emacs ; cp ~/Backup/deepin-emacs/.emacs ~/.emacs'
 alias deepin2hualet='cp ~/.emacs ~/Backup/deepin-emacs/.emacs ; cp ~/Backup/hualet-emacs/.emacs ~/.emacs'
-
-alias copy_dss='sudo cp -r  ~/project/deepin-system-settings/ /usr/share/'
-alias copy_dss_dir='sudo cp -r  ~/project/deepin-system-settings/dss /usr/share/deepin-system-settings/'
-alias copy_bluetooth='sudo cp -r  ~/project/deepin-system-settings/modules/bluetooth/ /usr/share/deepin-system-settings/modules'
-alias copy_grub2='sudo cp -r  ~/project/deepin-system-settings/modules/grub2/ /usr/share/deepin-system-settings/modules'
-alias copy_mount_media='sudo cp -r  ~/project/deepin-system-settings/modules/mount_media/ /usr/share/deepin-system-settings/modules'
-alias trayicon='python /usr/share/deepin-system-tray/src/trayicon.py'
