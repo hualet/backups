@@ -23,4 +23,4 @@ alias deepin2hualet='cp ~/.emacs ~/Backup/deepin-emacs/.emacs ; cp ~/Backup/hual
 
 
 # Settings
-ulimit -c unlimited
+ulimit -c 0 #unlimited
