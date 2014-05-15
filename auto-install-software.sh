@@ -4,4 +4,4 @@ sudo apt-get install git zsh w3m cowsay stardict sdcv pyflakes imagemagick emacs
     cscope cscope-el \
     slime clisp cl-quicklisp \
     golang-mode \
-    guake kupfer\
+    guake kupfer autojump workrave\
