@@ -28,3 +28,21 @@ alias deepin2hualet='cp ~/.emacs ~/Backup/deepin-emacs/.emacs ; cp ~/Backup/hual
 
 # Settings
 ulimit -c 0 #unlimited
+
+# Utility functions
+mount_smb (){
+#$1 smb net location $2 mount point
+    SMB_USERNAME="wangyaohua"
+    SMB_PASSWD="123456"
+	local mstat=`mount -l|grep $1`
+	local dir_head=`ls $2 2>/dev/null|head -1`
+	if [[ -z "$mstat"  &&  -z "$dir_head" ]];then
+			echo 'no mount '$1''
+			sudo mkdir $2 2>/dev/null
+        	sudo mount -t cifs $1 $2 -o \
+        	username=$SMB_USERNAME,password=$SMB_PASSWD,domain=WORKGROUP,uid=$UID,forceuid
+			echo "Mount Samba service" `mount -l|grep $1`
+	else
+		echo ok $mstat
+	fi	
+}
