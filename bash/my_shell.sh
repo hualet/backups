@@ -3,7 +3,7 @@
 export PROJECT_HOME=~/project
 export MY_BIN_HOME=~/bin
 export JAVA_HOME=/usr/share/jdk1.7.0_40/
-export PATH=/opt/Qt5.2.0/5.2.0/gcc/bin:${PATH}:${JAVA_HOME}/bin:${MY_BIN_HOME}/dex2jar-0.0.9.15:${MY_BIN_HOME}/jd-gui-linux
+export PATH=/opt/Qt5.3.0/5.3/gcc/bin:/usr/lib/i386-linux-gnu/qt5/bin:${PATH}:${JAVA_HOME}/bin:${MY_BIN_HOME}/dex2jar-0.0.9.15:${MY_BIN_HOME}/jd-gui-linux
 export CLASSPATH=.:${JAVA_HOME}/lib:${JAVA_HOME}/jre/lib
 export GOPATH=~/Golang/
 
@@ -46,3 +46,4 @@ mount_smb (){
 		echo ok $mstat
 	fi	
 }
+alias mount_people='mount_smb //10.0.0.6/people /media/people'
