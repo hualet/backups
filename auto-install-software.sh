@@ -15,4 +15,4 @@ sudo apt-get install git \
     emacs24 gettext-el mp3info vorbis-tools cscope cscope-el \
     slime clisp cl-quicklisp \
     golang-mode \
-    guake synapse autojump workrave\
+    guake kupfer autojump workrave\
