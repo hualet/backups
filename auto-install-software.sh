@@ -14,5 +14,5 @@ sudo apt-get install git \
     imagemagick \
     emacs24 gettext-el mp3info vorbis-tools cscope cscope-el \
     slime clisp cl-quicklisp \
-    golang-mode \
-    guake kupfer autojump workrave\
+    python-epc python-jedi \
+    guake kupfer autojump\
