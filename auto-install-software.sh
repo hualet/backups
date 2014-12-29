@@ -1,9 +1,9 @@
 #!/bin/bash
 
 sudo apt-get install git \
-    ipython \
+    ipython build-essential\
     d-feet \
-    zsh \
+    zsh suckless-tools\
     trash-cli \
     w3m \
     ack-grep \

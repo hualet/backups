@@ -13,11 +13,10 @@ alias cscope_build_c='find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -nam
 alias ec='emacsclient'
 alias openhere='xdg-open .'
 #alias vpn='nohup python ~/goagent/local/proxy.py > /dev/null 2>&1'
-alias vpn='python ~/goagent/local/proxy.py'
 alias ssh_proxy='ssh -qTfnN -D 7070 hualet@vip04.gossh.net -p 443'
 alias update_deepin='sudo apt-get update && sudo apt-get dist-upgrade -y'
 alias copy_file_content='xclip -sel clip <'
-alias sync_dss='rsync -r hualet@10.0.0.128:/Users/hualet/Projects/Company/dss ~/project'
+alias start_vnc = 'x11vnc -shared -forever -usepw -ncache 10 -display :0'
 
 alias pbcopy='xsel -i --clipboard'
 alias pbpaste='xsel -o --clipboard'
